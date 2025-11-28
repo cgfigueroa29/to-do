@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Courier New", Courier, monospace;
+	font-size: large;
+}
+body {
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+h1 {
+	color: white;
+	padding: 20px;
+	font-size: 40px;
+}
+.app {
+	background-color: #222;
+	width: 800px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	font-size: medium;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.new-task {
+	width: 100%;
+	display: flex;
+	gap: 10px;
+}
+#new-task-input {
+	background-color: white;
+	color: black;
+	width: 80%;
+	height: 40px;
+	padding-left: 10px;
+	text-align: left;
+	border: none;
+	border-radius: 10px;
+}
+#add-task-btn {
+	background-color: #10b981;
+	height: 40px;
+	color: white;
+
+	text-align: center;
+	width: 20%;
+	border-radius: 10px;
+	border: none;
+}
+.task-list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	overflow: unset;
+}
+.task-item {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+.task-content {
+	background-color: #666;
+	color: white;
+	width: 70%;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	padding: 10px;
+	overflow-wrap: break-word;
+	word-break: break-word;
+	hyphens: auto;
+}
+.edit-task-btn {
+	background-color: #c77c13;
+	color: white;
+	width: 15%;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+.delete-task-btn {
+	background-color: #ef4444;
+	color: white;
+	width: 15%;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
