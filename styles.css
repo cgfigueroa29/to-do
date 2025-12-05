@@ -1,0 +1,233 @@
+* {
+	box-sizing: border-box;
+	font-family: "Courier New", Courier, monospace;
+	font-size: large;
+	margin: 0;
+	padding: 0;
+}
+body {
+	align-items: center;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: start;
+	padding: 20px;
+	width: 100vw;
+}
+h1 {
+	color: white;
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+button {
+	all: unset;
+	cursor: pointer;
+}
+.app {
+	background-color: #222;
+	border: solid 1px rgb(121, 121, 121);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	font-size: medium;
+	overflow: auto;
+	min-width: 310px;
+	max-width: 768px;
+	width: 100%;
+}
+.app::-webkit-scrollbar {
+	width: 10px;
+}
+.app::-webkit-scrollbar-track {
+	background: transparent;
+}
+.app::-webkit-scrollbar-thumb {
+	background: #666;
+	border-radius: 10px;
+}
+.app::-webkit-scrollbar-thumb:hover {
+	background: #444;
+}
+.new-task-container {
+	background-color: #222;
+	padding: 20px;
+}
+.new-task {
+	align-items: start;
+	background-color: #333;
+	border-radius: 10px;
+	border: solid 1px rgb(121, 121, 121);
+	display: flex;
+	gap: 10px;
+	height: auto;
+	padding: 10px;
+}
+#new-task-input-text {
+	background-color: white;
+	border-radius: 10px;
+	color: black;
+	min-height: 40px;
+	overflow: hidden;
+	padding: 10px;
+	resize: none;
+	text-align: left;
+	width: 70%;
+}
+#new-task-input-text::placeholder {
+	color: #888;
+}
+#add-task-btn {
+	background-color: #059669;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	height: 40px;
+	text-align: center;
+	transition: all 0.2s ease;
+	width: 30%;
+}
+#add-task-btn:hover {
+	background-color: #047857;
+}
+#add-task-btn:active {
+	background-color: #065f46;
+	transform: scale(0.98);
+}
+.task-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 0 20px 20px 20px;
+}
+.task-item {
+	align-items: center;
+	background-color: #333;
+	border: solid 1px rgb(121, 121, 121);
+	border-radius: 10px;
+	display: flex;
+	gap: 10px;
+	padding: 10px;
+}
+.task-item-text {
+	align-items: center;
+	background-color: #666;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	height: 100%;
+	hyphens: auto;
+	overflow-wrap: break-word;
+	padding: 10px;
+	white-space: pre-line;
+	width: 70%;
+	word-break: break-word;
+}
+.task-btns-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	height: 100%;
+	justify-content: start;
+	width: 30%;
+}
+.edit-task-btn {
+	align-items: center;
+	background-color: #d97706;
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	height: 40px;
+	justify-content: center;
+	transition: all 0.2s ease;
+	width: 100%;
+}
+.edit-task-btn:hover {
+	background-color: #b45309;
+}
+.edit-task-btn:active {
+	background-color: #92400e;
+	transform: scale(0.98);
+}
+.delete-task-btn {
+	align-items: center;
+	background-color: #dc2626;
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	height: 40px;
+	justify-content: center;
+	transition: all 0.2s ease;
+	width: 100%;
+}
+.delete-task-btn:hover {
+	background-color: #b91c1c;
+}
+.delete-task-btn:active {
+	background-color: #991b1b;
+	transform: scale(0.98);
+}
+.edit-task-modal {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 2;
+	gap: 10px;
+	padding: 10px;
+}
+.editing-task-input {
+	background-color: white;
+	border-radius: 10px;
+	color: black;
+	min-height: 40px;
+	overflow: hidden;
+	padding: 10px;
+	resize: none;
+	text-align: left;
+	min-width: 310px;
+	max-width: 768px;
+	width: 100%;
+}
+.editing-task-input-btns-container {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: center;
+	width: 100%;
+}
+.update-task-btn {
+	background-color: #059669;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	height: 40px;
+	margin: 10px;
+	text-align: center;
+	transition: all 0.2s ease;
+	width: 120px;
+}
+.cancel-update-task-btn {
+	background-color: #dc2626;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	height: 40px;
+	margin: 10px;
+	text-align: center;
+	transition: all 0.2s ease;
+	width: 120px;
+}
